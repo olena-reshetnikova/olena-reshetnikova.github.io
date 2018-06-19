@@ -1,0 +1,89 @@
+.container.gallery-container {
+    min-height: 100vh;
+    margin-bottom: 2vh;
+}
+
+/* Override bootstrap column paddings */
+.gallery .row > div {
+    padding: 15px;
+}
+
+#portfilio {
+    background-color: white;
+}
+
+.gallery {
+    margin: 0 -20px;
+}
+
+.gallery .lightbox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.gallery .lightbox:hover img {
+    transition: 0.8s;
+    transform: scale(1.2);
+}
+
+
+.gallery .caption {
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 100px;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    z-index: 99;
+    transition: 0.4s;
+}
+
+.gallery a:hover .caption {
+    background-color: rgba(181, 145, 181, 0.6);
+    opacity: 0.9;
+}
+
+.gallery .caption * {
+    flex-basis:100%;
+}
+
+.gallery .caption h4 {
+    display: flex;
+}
+
+.gallery .caption p {
+    margin:0;
+    padding:0;
+}
+
+.gallery .lightbox:hover .caption {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}

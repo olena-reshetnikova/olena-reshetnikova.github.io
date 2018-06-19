@@ -1,0 +1,168 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+slider {
+    position: inherit;
+}
+
+.full {
+    position: fixed;
+    background-size: cover;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;
+    /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+header,
+#s2,
+#s4 {
+    background-color: ;
+    /* Колір фону для секцій #s2, #s4 */
+}
+
+#s1 {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#s2 {
+    background-image: url("../img/background1.jpg");
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    padding: 00px;
+}
+
+#s3 {
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+}
+
+#s4 {
+    clear: both;
+    background-image: url("../img/s5.jpg");
+    background-size: cover;
+    min-height: 75vh;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    display: flex;
+}
+
+.colheader,
+.coltext {
+    margin: 10px;
+}
+
+.row {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.rowleft {
+    align-items: left;
+    align-content: left;
+    text-align: left;
+}
+
+.colheader {
+    padding: 0px;
+    color: #B2DBE2;
+    margin-bottom: 50px;
+}
+
+.twocol {
+    padding: 50px;
+}
+
+.coltext {
+    color: #C3DFD3;
+    margin: 50px;
+    text-align: center;
+}
+
+.col4 {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.fa {
+    color: #F7A3B7;
+    font-size: 27px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.copyright {
+    margin-bottom: 3vh;
+    color: #F7A3B7;
+}
+
+.gallery-container {
+    color: #F7A3B7;
+}
+
+footer {
+    background-color: #944B94;
+    min-height: 7vh;
+}
+
+/**************************************/
+
+/* Зміна властивостей 
+ля breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 25px 0;
+    }
+
+}

@@ -1,0 +1,68 @@
+.slider-wrapper {
+    background-color: #aaa;
+    padding: 0px;
+    color: white;
+    max-height: 100vh;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    text-align: center;
+}
+
+.carousel-inner {
+    margin-top: 3rem;
+    justify-content: center;
+    max-height: 100vh;
+    position: sticky;
+}
+
+#text_slider {
+    padding: 50px;
+    position: inherit;
+}
+
+.carousel-indicators {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.carousel-image {
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 48px;
+    max-height: 48px;
+    top: 50%;
+    margin-top: -24px;
+    grid-column-end: clear all;
+}
+
+.carousel-control-prev {
+    border-radius: 0 50% 50% 0;
+    background-color: #8E4F77;
+}
+
+.carousel-control-next {
+    border-radius: 50% 0 0 50%;
+    background-color: #824B6B;
+}
+
+/* Для екранів шириною менше 767px */
+
+/* мінімальна висота слайдера      */
+
+/* рівну висоті viewport 100vh     */
+
+@media screen and (max-width:767px) {
+
+    .carousel {
+        min-height: 100vh;
+    }
+}
